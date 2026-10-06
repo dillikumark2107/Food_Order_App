@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %}
+My Orders
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+
+    <h1>📦 My Orders</h1>
+
+
+    <div class="orders-container">
+
+        {% for order in orders %}
+
+        <div class="order-card">
+
+            <h2>
+                {{ order.food.name }}
+            </h2>
+
+            <p>
+                Quantity:
+                <b>{{ order.quantity }}</b>
+            </p>
+
+            <p>
+                Price:
+                ₹{{ order.food.price }}
+            </p>
+
+            <p class="total">
+                Total:
+                ₹{{ order.total_price }}
+            </p>
+
+            <p class="date">
+                {{ order.ordered_at }}
+            </p>
+
+        </div>
+
+        {% empty %}
+
+        <div class="empty">
+
+            <h2>No Orders Yet</h2>
+
+            <p>
+                You haven't ordered any food.
+            </p>
+
+            <a class="order-button"
+               href="{% url 'home' %}">
+
+                Browse Food
+
+            </a>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

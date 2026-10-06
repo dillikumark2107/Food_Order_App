@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Edit Food</title>
+
+</head>
+
+<body>
+
+    <h1>Edit Food</h1>
+
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">
+            Update Food
+        </button>
+
+    </form>
+
+
+    <br>
+
+    <a href="{% url 'home' %}">
+        Back to Food Menu
+    </a>
+
+
+</body>
+
+</html>

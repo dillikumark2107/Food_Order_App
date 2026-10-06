@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+
+/* Navbar */
+
+nav {
+    background: #222;
+    color: white;
+
+    padding: 18px 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-right: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+
+/* Container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+}
+
+.container > h1 {
+    text-align: center;
+}
+
+
+/* Welcome */
+
+.welcome {
+    text-align: center;
+    color: #777;
+}
+
+
+/* Food */
+
+.food-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+.food-card {
+    width: 280px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 10px #ddd;
+}
+
+
+.food-card:hover {
+    transform: translateY(-5px);
+
+    transition: 0.2s;
+}
+
+
+.food-icon {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.food-card h2 {
+    margin: 10px 0;
+}
+
+
+.food-card h3 {
+    color: green;
+
+    font-size: 22px;
+}
+
+
+.category {
+    display: inline-block;
+
+    background: #eee;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+/* Buttons */
+
+.order-button {
+    display: inline-block;
+
+    background: #ff9800;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    margin-top: 10px;
+}
+
+
+.order-button:hover {
+    background: #e68900;
+}
+
+
+/* Forms */
+
+.form-container {
+    width: 450px;
+
+    max-width: 90%;
+
+    background: white;
+
+    padding: 35px;
+
+    margin: 50px auto;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px #ddd;
+
+    text-align: center;
+}
+
+
+.form-container form {
+    text-align: left;
+}
+
+
+.form-container label {
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+
+.form-container button {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #ff9800;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.form-container button:hover {
+    background: #e68900;
+}
+
+
+/* Error */
+
+.error {
+    background: #ffdddd;
+
+    color: red;
+
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+
+/* Bottom text */
+
+.bottom-text {
+    margin-top: 20px;
+}
+
+
+.bottom-text a {
+    color: #ff9800;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Price */
+
+.price {
+    color: green;
+}
+
+
+/* Orders */
+
+.orders-container {
+    max-width: 700px;
+
+    margin: 30px auto;
+}
+
+
+.order-card {
+    background: white;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px #ddd;
+}
+
+
+.order-card h2 {
+    margin-top: 0;
+}
+
+
+.total {
+    color: green;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.date {
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+.empty {
+    text-align: center;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+}

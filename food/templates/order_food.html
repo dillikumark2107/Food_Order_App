@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Order Food
+{% endblock %}
+
+
+{% block content %}
+
+<div class="form-container">
+
+
+
+    <h1>
+        {{ food.name }}
+    </h1>
+
+
+    <p>
+        {{ food.description }}
+    </p>
+
+
+    <h2 class="price">
+        ₹{{ food.price }}
+    </h2>
+
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+
+        <label>
+            Quantity
+        </label>
+
+        <input
+            type="number"
+            name="quantity"
+            min="1"
+            value="1"
+            required
+        >
+
+
+        <button type="submit">
+            Place Order
+        </button>
+
+    </form>
+
+
+    <p class="bottom-text">
+
+        <a href="{% url 'home' %}">
+            ← Back to Food Menu
+        </a>
+
+    </p>
+
+</div>
+
+{% endblock %}
